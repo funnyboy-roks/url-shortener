@@ -1,0 +1,8 @@
+DROP TABLE IF EXISTS urls;
+
+CREATE TABLE urls (
+    slug TEXT PRIMARY KEY NOT NULL UNIQUE,
+    url TEXT NOT NULL,
+    author_ip TEXT NOT NULL,
+    usage_count INTEGER NOT NULL DEFAULT 0
+);
